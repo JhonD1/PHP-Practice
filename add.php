@@ -47,7 +47,7 @@ if ( isset($_SESSION['success']) ) {
 $stmt = $pdo->query("SELECT * FROM cart");
 while( $rows = $stmt->fetch(PDO::FETCH_ASSOC))  {
 ?>
-<div style ="border:1px solid #333; background-color:#f1f1f1; border-radius:5px padding:16px; align='center'"> 
+<div style ="border:1px solid #333; background-color:#f1f1f1; border-radius:5px; padding:16px;" align='center'> 
 <form method="post">
     <p>Item:
     <?php echo(htmlentities($rows['item']));?></p>
